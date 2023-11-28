@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    display:flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, button {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#datepicker {
+    cursor: pointer;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+}
+html {
+    padding-top: 100px;
+    padding-bottom:100px;
+}
