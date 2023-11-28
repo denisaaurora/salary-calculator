@@ -18,6 +18,7 @@ async function calculateSalary() {
     const totalTaxesToPay = document.getElementById('totalTaxesToPay');
     const totalIncomeAfterTaxes = document.getElementById('totalIncomeAfterTaxes');
     const totalIncomeAndBalanceUnsubmitted = document.getElementById('totalIncomeAndBalanceUnsubmitted');
+    const commissionRateEl = document.getElementById('commissionRate')
 
 
     if (!email) {
@@ -34,7 +35,7 @@ async function calculateSalary() {
             const userFromDatabase = angajati.find(user => user.email === email);
 
             if (userFromDatabase) {
-
+                let commissionRate = ''
                 name.textContent = userFromDatabase.nume;
                 venituriLivrari.textContent = userFromDatabase.venituri;
                 cash.textContent = Number(userFromDatabase.totalPlataCash).toFixed(2);
@@ -43,7 +44,23 @@ async function calculateSalary() {
                 venituriLivrari1.textContent = userFromDatabase.venituri;
                 cash1.textContent = "- " + Number(userFromDatabase.totalPlataCash).toFixed(2);
                 tips1.textContent = userFromDatabase.tips;
-                const commissionRate = 0.10; // 12%
+
+                if (email === 'mariusmarius817@gmail.com') {
+                    commissionRate = 0.10; // 12%
+                    commissionRateEl.textContent = (commissionRate * 100) + "%"
+                } else if (getTotalProfitGenerat() < 1500) {
+                        commissionRate = 0.12
+                        commissionRateEl.textContent = (commissionRate * 100) + "%"
+                    } else if (getTotalProfitGenerat() < 2000) {
+                        commissionRate = 0.11
+                        commissionRateEl.textContent = (commissionRate * 100) + "%"
+                    } else if (getTotalProfitGenerat() > 2000) {
+                        commissionRate = 0.10
+                        commissionRateEl.textContent = (commissionRate * 100) + "%"
+                    } else if (getTotalProfitGenerat() > 3000) {
+                        commissionRate = 0.09
+                        commissionRateEl.textContent = (commissionRate * 100) + "%"
+                    }
 
                 function getTotalProfitGenerat() {
                     // Calculate total income
@@ -84,16 +101,18 @@ async function calculateSalary() {
                 // Calculate total salary after taxes
                 function salariuDupaTaxe() {
                     let totalIncomeAfterTaxesCalculate = (salariuInainteDeTaxe() - totalTaxeDePlatit()).toFixed(2);
-                    totalIncomeAfterTaxes.textContent = userFromDatabase.salariuInainteDeTaxe + ' - ' + userFromDatabase.taxe + ' = ' + totalIncomeAfterTaxesCalculate;
-                return totalIncomeAfterTaxesCalculate
+                    totalIncomeAfterTaxes.textContent = userFromDatabase.salariuInainteDeTaxe + ' - ' + totalTaxeDePlatit() + ' = ' + totalIncomeAfterTaxesCalculate;
+                    return totalIncomeAfterTaxesCalculate
                 }
 
                 //calculate final salary
-
-                let salariuIncasatCashNedepus = (Number(salariuDupaTaxe()) + Number(userFromDatabase.totalPlataCash));
-                console.log(salariuIncasatCashNedepus)
-                totalIncomeAndBalanceUnsubmitted.textContent = salariuDupaTaxe() + ' + ' + userFromDatabase.totalPlataCash + ' = ' + salariuIncasatCashNedepus
-
+                const paragraphElement = totalIncomeAndBalanceUnsubmitted.parentElement
+                let salariuIncasatCashNedepus = (Number(salariuDupaTaxe()) + Number(userFromDatabase.totalPlataCash)).toFixed(2);
+                if (userFromDatabase.totalPlataCash > 0) {
+                    totalIncomeAndBalanceUnsubmitted.textContent = salariuDupaTaxe() + ' + ' + userFromDatabase.totalPlataCash + ' = ' + salariuIncasatCashNedepus
+                } else {
+                    paragraphElement.style.display = "none"
+                }
 
             } else {
                 alert('Data not found for the entered email.');
