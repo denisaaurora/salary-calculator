@@ -43,7 +43,7 @@ async function calculateSalary() {
                 venituriLivrari1.textContent = userFromDatabase.venituri;
                 cash1.textContent = "- " + Number(userFromDatabase.totalPlataCash).toFixed(2);
                 tips1.textContent = userFromDatabase.tips;
-                const commissionRate = 0.12; // 12%
+                const commissionRate = 0.10; // 12%
 
                 function getTotalProfitGenerat() {
                     // Calculate total income
