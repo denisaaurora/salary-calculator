@@ -1,0 +1,101 @@
+[
+  {
+    "nume": "Gheorghe Ionut-Alexandru",
+    "email": "alexionut5598@gmail.com",
+    "venituri": "1454.93",
+    "totalPlataCash": "0",
+    "tips": "179.38",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "21.82"
+  },
+  {
+    "nume": "Ostafe Cosmin",
+    "email": "cosmin.ostafe2000@gmail.com",
+    "venituri": "61.69",
+    "totalPlataCash": "0",
+    "tips": "11.77",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "0.92"
+  },
+  {
+    "nume": "Andrei Petcu",
+    "email": "cs_by_v3rsac3@yahoo.com",
+    "venituri": "726.46",
+    "totalPlataCash": "24.91",
+    "tips": "59",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "10.89"
+  },
+  {
+    "nume": "Cute Gabriel-Iulian",
+    "email": "cutegabriel23@gmail.com",
+    "venituri": "97.52",
+    "totalPlataCash": "0",
+    "tips": "27.98",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "1.46"
+  },
+  {
+    "nume": "Dragoiescu Silviu",
+    "email": "dragoiescus@gmail.com",
+    "venituri": "22",
+    "totalPlataCash": "0",
+    "tips": "3.44",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "0.33"
+  },
+  {
+    "nume": "Helteanu Cristi-Lucian",
+    "email": "helteanuc@gmail.com",
+    "venituri": "1108.2",
+    "totalPlataCash": "323.63",
+    "tips": "149.2",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "16.62"
+  },
+  {
+    "nume": "Agavriloaie Mihai",
+    "email": "magavriloaie03@gmail.com",
+    "venituri": "48.77",
+    "totalPlataCash": "0",
+    "tips": "0",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "0.73"
+  },
+  {
+    "nume": "Badea Marius",
+    "email": "mariusmarius817@gmail.com",
+    "venituri": "1859.25",
+    "totalPlataCash": "159.47",
+    "tips": "79",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "27.89"
+  },
+  {
+    "nume": "Constantin Udila",
+    "email": "udilaconstantin48@gmail.com",
+    "venituri": "1713.08",
+    "totalPlataCash": "0",
+    "tips": "216.24",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "25.7"
+  },
+  {
+    "nume": "Vladut Toader",
+    "email": "vladut.toader@yahoo.com",
+    "venituri": "230",
+    "totalPlataCash": "0",
+    "tips": "0",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": null
+  },
+  {
+    "nume": null,
+    "email": null,
+    "venituri": "7321.9",
+    "totalPlataCash": "-508.01",
+    "tips": "726.01",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "106.36"
+  }
+]

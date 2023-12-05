@@ -1,26 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*height: 100vh;*/
     margin: 0;
 }
 
 .container {
-    max-width: 400px;
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    padding: 10px;
+    /*background-color: red;*/
+    /*max-width: 400px;*/
 }
 
 label {
-    display: block;
+    /*display: block;*/
     margin-top: 10px;
 }
 
 input, button {
+    display: block;
+    width: 190px;
+    height: 30px;
+    color: #432000;
+    background-color: #DCE1EB;
+    border: 0;
     padding: 8px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 10px;
 }
 
 #datepicker {
@@ -28,9 +39,19 @@ input, button {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    color: #FDFDFD;
+    background-color: #AC485A;
+    width: 210px;
+    height: 50px;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    /*background-color: #4CAF50;*/
+    /*color: white;*/
+    /*border: none;*/
     cursor: pointer;
 }
 
@@ -38,10 +59,8 @@ button:hover {
     background-color: #45a049;
 }
 
-#result {
-    margin-top: 20px;
-}
+
 html {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom:100px;
 }

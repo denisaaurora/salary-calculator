@@ -27,7 +27,7 @@ async function calculateSalary() {
     }
 
     // Assume you have a JSON file with user data, replace 'your_json_file.json' with the actual file name
-    fetch("./Raport_20.11.2023_26.11.2023_dionisiuvalentin.i97@gmail.com.json")
+    fetch("./Raport_27.11.2023_03.12.2023_dionisiuvalentin.i97@gmail.com.json")
         .then(response => response.json())
         .then(angajati => {
 
@@ -101,14 +101,14 @@ async function calculateSalary() {
                 // Calculate total salary after taxes
                 function salariuDupaTaxe() {
                     let totalIncomeAfterTaxesCalculate = (salariuInainteDeTaxe() - totalTaxeDePlatit()).toFixed(2);
-                    totalIncomeAfterTaxes.textContent = userFromDatabase.salariuInainteDeTaxe + ' - ' + totalTaxeDePlatit() + ' = ' + totalIncomeAfterTaxesCalculate;
+                    totalIncomeAfterTaxes.textContent = salariuInainteDeTaxe() + ' - ' + totalTaxeDePlatit() + ' = ' + totalIncomeAfterTaxesCalculate;
                     return totalIncomeAfterTaxesCalculate
                 }
 
                 //calculate final salary
                 const paragraphElement = totalIncomeAndBalanceUnsubmitted.parentElement
                 let salariuIncasatCashNedepus = (Number(salariuDupaTaxe()) + Number(userFromDatabase.totalPlataCash)).toFixed(2);
-                if (userFromDatabase.totalPlataCash > 0) {
+                if (userFromDatabase.totalPlataCash > "0") {
                     totalIncomeAndBalanceUnsubmitted.textContent = salariuDupaTaxe() + ' + ' + userFromDatabase.totalPlataCash + ' = ' + salariuIncasatCashNedepus
                 } else {
                     paragraphElement.style.display = "none"
