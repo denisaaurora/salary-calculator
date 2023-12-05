@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    display: flex;
+    /*display: flex;*/
     padding: 10px;
     /*background-color: ;*/
     /*max-width: 400px;*/
