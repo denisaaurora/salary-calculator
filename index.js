@@ -27,7 +27,7 @@ async function calculateSalary() {
     }
 
     // Assume you have a JSON file with user data, replace 'your_json_file.json' with the actual file name
-    fetch("./Raport_04.12.2023_10.12.2023_dionisiuvalentin.i97@gmail.com.json")
+    fetch("./Raport_11.12.2023_17.12.2023_dionisiuvalentin.i97@gmail.com.json")
         .then(response => response.json())
         .then(angajati => {
 
@@ -46,7 +46,7 @@ async function calculateSalary() {
                 tips1.textContent = userFromDatabase.tips;
 
                 if (email === 'mariusmarius817@gmail.com') {
-                    commissionRate = 0.10; // 12%
+                    commissionRate = 0.10;
                     commissionRateEl.textContent = (commissionRate * 100) + "%"
                 } else if (getTotalProfitGenerat() < 1500) {
                         commissionRate = 0.12
@@ -108,7 +108,8 @@ async function calculateSalary() {
                 //calculate final salary
                 const paragraphElement = totalIncomeAndBalanceUnsubmitted.parentElement
                 let salariuIncasatCashNedepus = (Number(salariuDupaTaxe()) + Number(userFromDatabase.totalPlataCash)).toFixed(2);
-                if (userFromDatabase.totalPlataCash > 0 || userFromDatabase.totalPlataCash > "0") {
+                if (Number(userFromDatabase.totalPlataCash) > Number(0)) {
+                    paragraphElement.style.display = "block"
                     totalIncomeAndBalanceUnsubmitted.textContent = salariuDupaTaxe() + ' + ' + userFromDatabase.totalPlataCash + ' = ' + salariuIncasatCashNedepus
                 } else {
                     paragraphElement.style.display = "none"
