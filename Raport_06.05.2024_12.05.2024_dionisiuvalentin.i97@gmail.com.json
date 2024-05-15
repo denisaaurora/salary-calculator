@@ -1,0 +1,56 @@
+[
+  {
+    "nume": "Ditoi eugen",
+    "email": "eugenrafy31@gmail.com",
+    "venituri": "561.45",
+    "totalPlataCash": "0",
+    "tips": "62.76",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "8.42"
+  },
+  {
+    "nume": "Constantin Ionut",
+    "email": "ionutdconst@gmail.com",
+    "venituri": "1661.89",
+    "totalPlataCash": "0",
+    "tips": "285.13",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "24.92"
+  },
+  {
+    "nume": "Constantin Udila",
+    "email": "udilaconstantin48@gmail.com",
+    "venituri": "1206.57",
+    "totalPlataCash": "0",
+    "tips": "259.92",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "18.1"
+  },
+  {
+    "nume": "Vladut Toader",
+    "email": "vladut.toader@yahoo.com",
+    "venituri": "1144.84",
+    "totalPlataCash": "0",
+    "tips": "203.08",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "17.18"
+  },
+  {
+    "nume": "Voinescu Florin",
+    "email": "voinesculaurentiu128@yahoo.com",
+    "venituri": "221.55",
+    "totalPlataCash": "0",
+    "tips": "35.67",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "3.32"
+  },
+  {
+    "nume": null,
+    "email": null,
+    "venituri": "4796.3",
+    "totalPlataCash": "0",
+    "tips": "846.56",
+    "taxaDeschidereCont": null,
+    "taxaAplicatie": "71.94"
+  }
+]
