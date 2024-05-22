@@ -27,7 +27,7 @@ async function calculateSalary() {
     }
 
     // Assume you have a JSON file with user data, replace 'your_json_file.json' with the actual file name
-    fetch("./Raport_06.05.2024_12.05.2024_dionisiuvalentin.i97@gmail.com.json")
+    fetch("./Raport_13.05.2024_19.05.2024_dionisiuvalentin.i97@gmail.com.json")
         .then(response => response.json())
         .then(angajati => {
 
@@ -52,12 +52,16 @@ async function calculateSalary() {
                         commissionRate = 0.12
                         commissionRateEl.textContent = (commissionRate * 100) + "%"
                     } else if (getTotalProfitGenerat() < 2000) {
+                    console.log('0.11 comision')
                         commissionRate = 0.11
                         commissionRateEl.textContent = (commissionRate * 100) + "%"
-                    } else if (getTotalProfitGenerat() > 2000) {
+                    } else if (getTotalProfitGenerat() > 2000 && getTotalProfitGenerat() < 3000) {
+                    console.log(getTotalProfitGenerat())
+                    console.log('0.10 comision')
                         commissionRate = 0.10
                         commissionRateEl.textContent = (commissionRate * 100) + "%"
                     } else if (getTotalProfitGenerat() > 3000) {
+                    console.log('0.9 comision')
                         commissionRate = 0.09
                         commissionRateEl.textContent = (commissionRate * 100) + "%"
                     }
